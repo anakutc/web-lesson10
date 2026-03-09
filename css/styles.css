@@ -1,0 +1,129 @@
+.header{
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 36px auto;
+  
+}
+
+.Logo{ 
+  width: 142px;
+  height: 40px;
+}
+
+.burger-menu{
+  display: none;
+}
+
+@media (max-width: 1024px){
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 36px 64px;
+  }
+
+  .navigation{
+    display: none;
+  }
+
+  .Logo {
+    width: 86px;
+    height: 40px;
+    order: 2;
+    text-align: center;
+    flex: 1;
+  }
+
+  .burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    width: 40px;
+    height: 40px;
+    background-color: #5D50C6;
+    border-radius: 8px;
+    cursor: pointer;
+    order: 1;
+  }
+
+  .burger-menu span{
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 2px;
+  }
+
+  .buttons{
+    order: 3;
+    display: flex;
+    
+  }
+}
+
+.navigation ul{
+  display: flex;
+  gap: 25px;
+}
+
+.nav a{
+  color: #222831;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.bttn2{
+width: 115px;
+height: 49px;
+border-radius: 100px;
+background-color: #5D50C6;
+border: none;
+font-weight: 700;
+font-size: 14px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #EEEEEE;
+}
+
+.bttn1 {
+  width: 105px;
+  height: 49px;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  color: #222831;
+}
+
+@media (max-width: 744px) {
+  .header{
+    margin: 36px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Logo{
+    order: 1;
+    flex: none;
+    display: block;
+  }
+
+  .Logo img{
+    width: 86px;
+    display: block;
+    }
+
+  .burger-menu{
+    order: 2;
+    display: flex;
+  }
+
+  .buttons, .navigation {
+    display: none;
+  }
+}
